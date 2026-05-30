@@ -1,0 +1,16 @@
+apiVersion: monitoring.googleapis.com/v1
+kind: PodMonitoring
+
+metadata:
+  name: devops-api-monitoring
+  namespace: devops-final
+
+spec:
+  selector:
+    matchLabels:
+      app: devops-api
+
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 30s

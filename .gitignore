@@ -1,3 +1,6 @@
-node_modules
-.env
 k8s/01-secret.yaml
+.env
+node_modules/
+
+github-actions-key.json
+github-actions-key-new.json
